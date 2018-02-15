@@ -1,10 +1,10 @@
 [lb_servers]
-lbserver
+lbserver ansible_ssh_user=vagrant ansible_ssh_private_key_file=/root/.vagrant.d/insecure_private_key
 
 [backend_servers]
-tomcat_server_1
-tomcat_server_2
+tomcat_server_1 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/root/.vagrant.d/insecure_private_key
+tomcat_server_2 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/root/.vagrant.d/insecure_private_key
 
 [memcached_servers]
-cached_server1
-cached_server2
+cached_server1 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/root/.vagrant.d/insecure_private_key
+cached_server2 ansible_ssh_user=vagrant ansible_ssh_private_key_file=/root/.vagrant.d/insecure_private_key
